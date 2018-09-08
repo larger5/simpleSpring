@@ -1,4 +1,4 @@
-package framkworkTest.bean;
+package framekworkTest.iocTest.bean;
 
 public interface Person {
 

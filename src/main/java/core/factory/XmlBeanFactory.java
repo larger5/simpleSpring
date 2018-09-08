@@ -1,4 +1,4 @@
-package core;
+package core.factory;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,9 @@ import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-@Data // lombok：getter、setter
-@AllArgsConstructor // lombok：有参构造函数
-@NoArgsConstructor // lombok：无参构造函数
+@Data // getter、setter、toString
+@AllArgsConstructor // 有参构造函数
+@NoArgsConstructor // 无参构造函数
 public class XmlBeanFactory {
 
     private String xmlPath;

@@ -1,7 +1,7 @@
-package framkworkTest;
+package framekworkTest.iocTest;
 
-import core.PropertiesBeanFactory;
-import framkworkTest.bean.Person;
+import core.factory.PropertiesBeanFactory;
+import framekworkTest.iocTest.bean.Person;
 
 /**
  * 比 spring 胜一筹：支持 properties 配置，但功能有限，不支持其他初始化

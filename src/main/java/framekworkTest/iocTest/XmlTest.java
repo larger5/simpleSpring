@@ -1,8 +1,8 @@
-package framkworkTest;
+package framekworkTest.iocTest;
 
-import core.XmlBeanFactory;
-import framkworkTest.bean.impl.Student;
-import framkworkTest.bean.impl.Teacher;
+import core.factory.XmlBeanFactory;
+import framekworkTest.iocTest.bean.impl.Student;
+import framekworkTest.iocTest.bean.impl.Teacher;
 
 /**
  * 成功打造一个山寨版 spring 框架

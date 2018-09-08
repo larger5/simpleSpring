@@ -1,6 +1,6 @@
-package framkworkTest.bean.impl;
+package framekworkTest.iocTest.bean.impl;
 
-import framkworkTest.bean.Person;
+import framekworkTest.iocTest.bean.Person;
 
 public class Student implements Person {
 

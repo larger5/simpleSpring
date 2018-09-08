@@ -1,4 +1,4 @@
-package core;
+package core.factory;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 import java.io.InputStream;
 import java.util.Properties;
 
-@Data // lombok：getter、setter
-@AllArgsConstructor // lombok：有参构造函数
-@NoArgsConstructor // lombok：无参构造函数
+@Data // getter、setter、toString
+@AllArgsConstructor // 有参构造函数
+@NoArgsConstructor // 无参构造函数
 @Deprecated // Java原生：表明此类过时
 public class PropertiesBeanFactory {
 
