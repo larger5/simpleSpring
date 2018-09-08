@@ -2,25 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a37bc-c105-4c89-adea-6aa5d5091eb4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao/tableAnnotation/Column.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao/tableAnnotation/Id.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao/tableAnnotation/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/PropertiesBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/factory/PropertiesBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/XmlBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/factory/XmlBeanFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framkworkTest/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/PropertiesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framkworkTest/XmlTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/XmlTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framkworkTest/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/bean/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framkworkTest/bean/impl/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/bean/impl/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/framkworkTest/bean/impl/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/bean/impl/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/Dao/BaseCrud/BaseJdbc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/Dao/BaseCrud/BaseSql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/Dao/tableAnnotation/Column.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/Dao/tableAnnotation/Id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/Dao/tableAnnotation/Table.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/factory/PropertiesBeanFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/core/factory/XmlBeanFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/framekworkTest/daoTest/DaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/framekworkTest/daoTest/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/framekworkTest/iocTest/PropertiesTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/framekworkTest/iocTest/XmlTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/framekworkTest/iocTest/bean/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/framekworkTest/iocTest/bean/impl/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/framekworkTest/iocTest/bean/impl/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cun/AppTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,10 +33,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-101">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DaoTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="-160">
               <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -152,10 +161,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1603" />
-    <option name="y" value="125" />
+    <option name="x" value="2045" />
+    <option name="y" value="138" />
     <option name="width" value="982" />
-    <option name="height" value="600" />
+    <option name="height" value="848" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -212,7 +221,9 @@
               <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framekworkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="daoTest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -355,15 +366,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536324436437</updated>
-      <workItem from="1536324439200" duration="33678000" />
+      <workItem from="1536324439200" duration="36602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33678000" />
+    <option name="totallyTimeSpent" value="36602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -374,7 +386,7 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50053304" side_tool="true" weight="0.15795328" />
       <window_info anchor="right" id="Maven Projects" visible="true" weight="0.13539445" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3592881" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.44827586" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
@@ -549,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/factory/PropertiesBeanFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -573,30 +578,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/tableAnnotation/Column.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/tableAnnotation/Id.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -613,10 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="198" column="35" selection-start-line="198" selection-start-column="35" selection-end-line="198" selection-end-column="35" />
+        <state relative-caret-position="272">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -625,17 +610,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="89" column="20" lean-forward="true" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="794">
+          <caret line="198" column="35" selection-start-line="198" selection-start-column="35" selection-end-line="198" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/tableAnnotation/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="-160">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />

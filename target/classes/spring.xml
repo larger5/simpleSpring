@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans>
-    <bean id="student" class="framekworkTest.iocTest.bean.impl.Student"></bean>
-    <bean id="teacher" class="framekworkTest.iocTest.bean.impl.Teacher"></bean>
-</beans>
