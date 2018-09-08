@@ -1,6 +1,6 @@
-package bean.impl;
+package framkworkTest.bean.impl;
 
-import bean.Person;
+import framkworkTest.bean.Person;
 
 public class Teacher implements Person {
 

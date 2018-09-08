@@ -1,8 +1,8 @@
-package springTest;
+package framkworkTest;
 
-import Factory.XmlBeanFactory;
-import bean.impl.Student;
-import bean.impl.Teacher;
+import core.XmlBeanFactory;
+import framkworkTest.bean.impl.Student;
+import framkworkTest.bean.impl.Teacher;
 
 /**
  * 成功打造一个山寨版 spring 框架
@@ -21,13 +21,13 @@ public class XmlTest {
 
         Student student = (Student) xmlBeanFactory.getBean("student");
         student.introduce("college");
-        /**
+        /** 输出
          * I am a college student
          */
 
         Teacher teacher = (Teacher) xmlBeanFactory.getBean("teacher");
         teacher.introduce("Math");
-        /**
+        /** 输出
          * I am a Math teacher
          */
     }

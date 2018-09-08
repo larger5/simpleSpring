@@ -1,4 +1,4 @@
-package bean;
+package framkworkTest.bean;
 
 public interface Person {
 

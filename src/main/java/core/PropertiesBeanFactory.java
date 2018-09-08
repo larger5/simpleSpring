@@ -1,4 +1,4 @@
-package Factory;
+package core;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

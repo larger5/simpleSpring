@@ -1,6 +1,5 @@
-package Factory;
+package core;
 
-import jdk.nashorn.internal.objects.annotations.Constructor;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,12 +7,9 @@ import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-import java.io.InputStream;
-import java.util.Properties;
-
-@Data // getter、setter
-@AllArgsConstructor // 有参构造函数
-@NoArgsConstructor // 无参构造函数
+@Data // lombok：getter、setter
+@AllArgsConstructor // lombok：有参构造函数
+@NoArgsConstructor // lombok：无参构造函数
 public class XmlBeanFactory {
 
     private String xmlPath;

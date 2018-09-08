@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
-    <bean id="student" class="bean.impl.Student"></bean>
-    <bean id="teacher" class="bean.impl.Teacher"></bean>
+    <bean id="student" class="framkworkTest.bean.impl.Student"></bean>
+    <bean id="teacher" class="framkworkTest.bean.impl.Teacher"></bean>
 </beans>
