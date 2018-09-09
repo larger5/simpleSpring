@@ -10,7 +10,7 @@ import java.util.Properties;
 @Data // getter、setter、toString
 @AllArgsConstructor // 有参构造函数
 @NoArgsConstructor // 无参构造函数
-@Deprecated // Java原生：表明此类过时
+//@Deprecated // Java原生：表明此类过时
 public class PropertiesBeanFactory {
 
     private String propertiesPath;

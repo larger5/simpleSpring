@@ -3,21 +3,17 @@ package framekworkTest.iocTest;
 import core.factory.XmlBeanFactory;
 import framekworkTest.iocTest.bean.impl.Student;
 import framekworkTest.iocTest.bean.impl.Teacher;
+import org.junit.jupiter.api.Test;
 
 /**
- * 成功打造一个山寨版 spring 框架
+ * ioc 容器测试——xml配置版
  */
 public class XmlTest {
 
-    public static void main(String[] args) throws Exception {
+    private XmlBeanFactory xmlBeanFactory = new XmlBeanFactory("src/main/resources/spring.xml");
 
-        // 方案一
-        XmlBeanFactory xmlBeanFactory = new XmlBeanFactory("src/main/resources/spring.xml");
-
-        /* 方案二
-        XmlBeanFactory xmlBeanFactory = new XmlBeanFactory();
-        xmlBeanFactory.setXmlPath("src/main/resources/spring.xml");
-        */
+    @Test
+    public void xmlBeanFactoryTest() throws Exception {
 
         Student student = (Student) xmlBeanFactory.getBean("student");
         student.introduce("college");
@@ -31,4 +27,5 @@ public class XmlTest {
          * I am a Math teacher
          */
     }
+
 }

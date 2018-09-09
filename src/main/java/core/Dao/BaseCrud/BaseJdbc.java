@@ -90,6 +90,17 @@ public class BaseJdbc {
         return true;
     }
 
+    public Boolean updateByEntityWithAllColumn(Object entity) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
+        String sql = BaseSql.updateByEntityWithAllColumn(entity);
+        System.out.println(sql);
+        Connection conn = getConnection();
+        PreparedStatement ps = conn.prepareStatement(sql);
+        int columnCount = ps.executeUpdate();
+        if (columnCount<1){
+            return false;
+        }
+        return true;
+    }
 
     /**
      * 连接
@@ -116,6 +127,5 @@ public class BaseJdbc {
         rs.close();
         conn.close();
     }
-
 
 }

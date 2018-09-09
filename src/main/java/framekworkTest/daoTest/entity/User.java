@@ -7,9 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data // lombok：getter、setter
-@AllArgsConstructor // lombok：有参构造函数
-@NoArgsConstructor // lombok：无参构造函数
+@Data // getter、setter
+@AllArgsConstructor // 有参构造函数
+@NoArgsConstructor // 无参构造函数
 @Table("t_user")
 public class User {
 
