@@ -2,6 +2,7 @@ package framekworkTest.daoTest;
 
 import core.Dao.BaseCrud.BaseJdbc;
 import core.Dao.BaseCrud.BaseSql;
+import core.factory.XmlBeanFactory;
 import framekworkTest.daoTest.entity.User;
 import org.junit.jupiter.api.Test;
 
@@ -12,8 +13,7 @@ import java.util.Map;
 
 public class DaoTest {
 
-    private BaseJdbc baseJdbc = new BaseJdbc("com.mysql.jdbc.Driver",
-            "jdbc:mysql://120.79.197.130:3307/testspring?useUnicode=true&characterEncoding=utf-8", "root", "123");
+    private BaseJdbc baseJdbc = new XmlBeanFactory("src/main/resources/spring.xml").getBaseJdbc();
 
     /** 1、查
      * 实体中有多少个属性，就有多少个查询的条件

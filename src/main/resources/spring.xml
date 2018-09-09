@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans>
-    <bean id="student" class="framekworkTest.iocTest.bean.impl.Student"></bean>
-    <bean id="teacher" class="framekworkTest.iocTest.bean.impl.Teacher"></bean>
+
+    <bean id="student" class="framekworkTest.iocTest.bean.impl.Student" />
+    <bean id="teacher" class="framekworkTest.iocTest.bean.impl.Teacher" />
+
+    <jdbc>
+        <property name="driver" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://120.79.197.120:3307/testspring?characterEncoding=utf-8" />
+        <property name="username" value="root"/>
+        <property name="password" value="123"/>
+    </jdbc>
+
 </beans>
