@@ -26,10 +26,10 @@ public class XmlBeanFactory {
         String className = (String) firstBean.attribute("class").getData();
         // 反射得类实例
         return Class.forName(className).newInstance();
-
     }
 
     public BaseJdbc getBaseJdbc()  {
+
         SAXReader saxReader = new SAXReader();
         // 在项目中相对的是以项目名为根路径
         Document document = null;
@@ -48,16 +48,7 @@ public class XmlBeanFactory {
         String usernameValue = (String) username.attribute("value").getData();
         String passwordValue = (String) password.attribute("value").getData();
 
-        BaseJdbc baseJdbc = null;
-        try {
-            baseJdbc = (BaseJdbc) Class.forName("core.Dao.BaseCrud.BaseJdbc").newInstance();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+        BaseJdbc baseJdbc = new BaseJdbc();
         baseJdbc.setDriver(driverValue);
         baseJdbc.setUrl(urlValue);
         baseJdbc.setUser(usernameValue);
@@ -65,6 +56,5 @@ public class XmlBeanFactory {
 
         return baseJdbc;
     }
-
 
 }
