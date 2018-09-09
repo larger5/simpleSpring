@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 
 public class BaseSql {
 
-    public static String queryByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public String queryByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         StringBuilder sql = new StringBuilder();
         // 获取 class
         Class c = entity.getClass();
@@ -53,7 +53,7 @@ public class BaseSql {
         return sql.toString();
     }
 
-    public static String deleteByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public String deleteByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         StringBuilder sql = new StringBuilder();
         // 获取 class
         Class c = entity.getClass();
@@ -96,7 +96,7 @@ public class BaseSql {
         return sql.toString();
     }
 
-    public static String insertByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public String insertByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         StringBuilder sql = new StringBuilder();
         StringBuilder insertField = new StringBuilder();
         StringBuilder insertValue = new StringBuilder();
@@ -148,7 +148,7 @@ public class BaseSql {
         return sql.toString();
     }
 
-    public static String updateByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public String updateByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         StringBuilder sql = new StringBuilder();
         StringBuilder condition = new StringBuilder();
 
@@ -190,21 +190,22 @@ public class BaseSql {
                 continue;
             }
             // id为条件（缺陷：目前只能有一个主键）
-            if (field.isAnnotationPresent(Id.class)){
+            if (field.isAnnotationPresent(Id.class)) {
                 condition.append(" where ").append(columnName).append("=").append("'").append(fieldValue).append("'");
                 continue;
             }
+            // sql 中只出现一个 set
             if (!hasSetString) {
                 sql.append(" set ");
                 hasSetString = true;
             }
             sql.append(columnName).append("=").append("'").append(fieldValue).append("'").append(",");
         }
-        return sql.substring(0,sql.length()-1)+condition;
+        return sql.substring(0, sql.length() - 1) + condition;
     }
 
     // 想去除记录中的部分字段时调用
-    public static String updateByEntityWithAllColumn(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public String updateByEntityWithAllColumn(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         StringBuilder sql = new StringBuilder();
         StringBuilder condition = new StringBuilder();
 
@@ -242,10 +243,11 @@ public class BaseSql {
             // 执行 getter，fieldValue 可能为 Integer、String 类型，还是 Object 稳点
             Object fieldValue = getMethod.invoke(entity);
             // id为条件（缺陷：目前只能有一个主键）
-            if (field.isAnnotationPresent(Id.class)){
+            if (field.isAnnotationPresent(Id.class)) {
                 condition.append(" where ").append(columnName).append("=").append("'").append(fieldValue).append("'");
                 continue;
             }
+            // sql 中只出现一个 set
             if (!hasSetString) {
                 sql.append(" set ");
                 hasSetString = true;
@@ -257,7 +259,7 @@ public class BaseSql {
             }
             sql.append(columnName).append("=").append("'").append(fieldValue).append("'").append(",");
         }
-        return sql.substring(0,sql.length()-1)+condition;
+        return sql.substring(0, sql.length() - 1) + condition;
     }
 
 }

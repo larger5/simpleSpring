@@ -13,9 +13,9 @@ import java.util.Map;
 public class DaoTest {
 
     private BaseJdbc baseJdbc = new BaseJdbc("com.mysql.jdbc.Driver",
-            "jdbc:mysql://120.79.197.120:3307/testspring?useUnicode=true&characterEncoding=utf-8", "root", "123");
+            "jdbc:mysql://120.79.197.130:3307/testspring?useUnicode=true&characterEncoding=utf-8", "root", "123");
 
-    /**1、查
+    /** 1、查
      * 实体中有多少个属性，就有多少个查询的条件
      * 返回类型：list
      */
@@ -26,7 +26,7 @@ public class DaoTest {
         System.out.println(maps);
     }
 
-    /**2、删
+    /** 2、删
      * 实体中有多少个属性，就有多少个删除的条件
      * 返回类型：成功 true、失败 false
      */
@@ -37,7 +37,7 @@ public class DaoTest {
         System.out.println(aBoolean2);
     }
 
-    /**3、增
+    /** 3、增
      * 允许实体中有任意个null属性
      * 允许自定义id，但是别和原有的记录冲突
      * 返回类型：成功 true、失败 false
@@ -49,7 +49,7 @@ public class DaoTest {
         System.out.println(aBoolean3);
     }
 
-    /**4、改
+    /** 4、改
      * 以第一个有 @Id 的为条件，其他的为改，实体中属性值为null的不改
      * 返回类型：成功 true、失败 false
      */
@@ -60,14 +60,13 @@ public class DaoTest {
         System.out.println(aBoolean4);
     }
 
-    /**5、改
+    /** 5、改
      * 用于置空记录中的一些字段
      * update t_user set user_name=null,password='123' where id='12'
      */
     @Test
     public void updateByEntityWithAllColumnTest() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
         User user5 = new User(12, null, "123");
-        String sql = BaseSql.updateByEntityWithAllColumn(user5);
         Boolean aBoolean = baseJdbc.updateByEntityWithAllColumn(user5);
         System.out.println(aBoolean);
     }

@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 @Data // getter、setter、toString
-@AllArgsConstructor // 有参构造函数
 @NoArgsConstructor // 无参构造函数
 public class BaseJdbc {
 
@@ -24,9 +23,18 @@ public class BaseJdbc {
     private String user;
     // 数据库 密码
     private String password;
+    // 拼接 sql
+    private BaseSql baseSql=new BaseSql();
+
+    public BaseJdbc(String driver, String url, String user, String password) {
+        this.driver = driver;
+        this.url = url;
+        this.user = user;
+        this.password = password;
+    }
 
     public List<Map<String, Object>> queryByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, SQLException, ClassNotFoundException {
-        String sql = BaseSql.queryByEntity(entity);
+        String sql = baseSql.queryByEntity(entity);
         System.out.println(sql);
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -55,7 +63,7 @@ public class BaseJdbc {
     }
 
     public Boolean deleteByEntity(Object entity) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
-        String sql = BaseSql.deleteByEntity(entity);
+        String sql = baseSql.deleteByEntity(entity);
         System.out.println(sql);
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
@@ -67,36 +75,36 @@ public class BaseJdbc {
     }
 
     public Boolean insertByEntity(Object entity) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
-        String sql = BaseSql.insertByEntity(entity);
+        String sql = baseSql.insertByEntity(entity);
         System.out.println(sql);
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
         int columnCount = ps.executeUpdate();
-        if (columnCount<1){
+        if (columnCount < 1) {
             return false;
         }
         return true;
     }
 
     public Boolean updateByEntity(Object entity) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
-        String sql = BaseSql.updateByEntity(entity);
+        String sql = baseSql.updateByEntity(entity);
         System.out.println(sql);
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
         int columnCount = ps.executeUpdate();
-        if (columnCount<1){
+        if (columnCount < 1) {
             return false;
         }
         return true;
     }
 
     public Boolean updateByEntityWithAllColumn(Object entity) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
-        String sql = BaseSql.updateByEntityWithAllColumn(entity);
+        String sql = baseSql.updateByEntityWithAllColumn(entity);
         System.out.println(sql);
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
         int columnCount = ps.executeUpdate();
-        if (columnCount<1){
+        if (columnCount < 1) {
             return false;
         }
         return true;
