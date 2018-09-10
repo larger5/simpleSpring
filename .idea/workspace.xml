@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8a37bc-c105-4c89-adea-6aa5d5091eb4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/ComplexJdbcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/vo/UserDepartment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleSpring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/simpleSpring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/factory/XmlBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/factory/XmlBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/BaseJdbcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BaseSql.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java">
+      <file leaf-file-name="ComplexJdbc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexJdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="470">
+              <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,25 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <file leaf-file-name="ComplexJdbcTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/ComplexJdbcTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="516">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseJdbc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java">
+      <file leaf-file-name="ComplexSql.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1204#1225#0" expanded="true" />
-                <element signature="e#2367#2388#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="112">
+              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -73,8 +79,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,8 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/spring.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/springTest/bean/impl/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/impl/Student.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dd.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/springTest/xmlTest.java" />
@@ -125,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/main/java/framekworkTest/annotationTest/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/tableTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/Dao/tableAnnotation/Id.java" />
-        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/XmlTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/factory/PropertiesBeanFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/PropertiesTest.java" />
@@ -133,13 +136,20 @@
         <option value="$PROJECT_DIR$/src/main/java/core/socket/NettyConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/socket/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/core/socket/MyWebSocketHandler.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/core/factory/XmlBeanFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java" />
-        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/factory/XmlBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexSql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/BaseJdbcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/Department.java" />
+        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/vo/UserDepartment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/ComplexJdbcTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexJdbc.java" />
       </list>
     </option>
   </component>
@@ -182,10 +192,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="1383" />
+    <option name="width" value="1364" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -197,7 +206,6 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,15 +263,63 @@
               <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="Dao" type="462c0819:PsiDirectoryNode" />
+              <item name="ComplexCrud" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
               <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framekworkTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framekworkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="daoTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framekworkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="daoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framekworkTest" type="462c0819:PsiDirectoryNode" />
+              <item name="daoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
@@ -271,10 +327,26 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simpleSpring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simpleSpring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cun" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,6 +360,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\webapp\WEB-INF" />
+      <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\webapp" />
+      <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\java\springTest" />
+      <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -295,10 +373,6 @@
       <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\java\core\socket" />
       <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\java" />
       <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\java\springTest" />
-      <recent name="C:\LLLLLLLLLLLLLLLLLLL\20180826idea\simpleSpring\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -313,11 +387,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DaoTest.countByEntity">
+  <component name="RunManager" selected="JUnit.ComplexJdbcTest.querySqlUpdateTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="DaoTest.countByEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseJdbcTest.countByEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simpleSpring" />
       <extension name="coverage">
         <pattern>
@@ -328,7 +402,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="framekworkTest.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.DaoTest" />
+      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.BaseJdbcTest" />
       <option name="METHOD_NAME" value="countByEntity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -340,7 +414,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="DaoTest.deleteByEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BaseJdbcTest.queryByEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simpleSpring" />
       <extension name="coverage">
         <pattern>
@@ -351,53 +425,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="framekworkTest.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.DaoTest" />
-      <option name="METHOD_NAME" value="deleteByEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DaoTest.insertByEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="simpleSpring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="framekworkTest.daoTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="framekworkTest.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.DaoTest" />
-      <option name="METHOD_NAME" value="insertByEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DaoTest.queryByEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="simpleSpring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="framekworkTest.daoTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="framekworkTest.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.DaoTest" />
+      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.BaseJdbcTest" />
       <option name="METHOD_NAME" value="queryByEntity" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -409,7 +437,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="DaoTest.queryByEntityAndPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ComplexJdbcTest.querySqlUpdateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="simpleSpring" />
       <extension name="coverage">
         <pattern>
@@ -420,8 +448,54 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="framekworkTest.daoTest" />
-      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.DaoTest" />
-      <option name="METHOD_NAME" value="queryByEntityAndPage" />
+      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.ComplexJdbcTest" />
+      <option name="METHOD_NAME" value="querySqlUpdateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ComplexJdbcTest.querySqlVoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simpleSpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="framekworkTest.daoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="framekworkTest.daoTest" />
+      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.ComplexJdbcTest" />
+      <option name="METHOD_NAME" value="querySqlVoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ComplexJdbcTest.queryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simpleSpring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="framekworkTest.daoTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="framekworkTest.daoTest" />
+      <option name="MAIN_CLASS_NAME" value="framekworkTest.daoTest.ComplexJdbcTest" />
+      <option name="METHOD_NAME" value="queryTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -471,19 +545,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.DaoTest.queryByEntity" />
-      <item itemvalue="JUnit.DaoTest.insertByEntity" />
-      <item itemvalue="JUnit.DaoTest.deleteByEntity" />
-      <item itemvalue="JUnit.DaoTest.queryByEntityAndPage" />
-      <item itemvalue="JUnit.DaoTest.countByEntity" />
+      <item itemvalue="JUnit.BaseJdbcTest.queryByEntity" />
+      <item itemvalue="JUnit.BaseJdbcTest.countByEntity" />
+      <item itemvalue="JUnit.ComplexJdbcTest.queryTest" />
+      <item itemvalue="JUnit.ComplexJdbcTest.querySqlVoTest" />
+      <item itemvalue="JUnit.ComplexJdbcTest.querySqlUpdateTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DaoTest.countByEntity" />
-        <item itemvalue="JUnit.DaoTest.queryByEntity" />
-        <item itemvalue="JUnit.DaoTest.queryByEntityAndPage" />
-        <item itemvalue="JUnit.DaoTest.deleteByEntity" />
-        <item itemvalue="JUnit.DaoTest.insertByEntity" />
+        <item itemvalue="JUnit.ComplexJdbcTest.querySqlUpdateTest" />
+        <item itemvalue="JUnit.ComplexJdbcTest.querySqlVoTest" />
+        <item itemvalue="JUnit.ComplexJdbcTest.queryTest" />
+        <item itemvalue="JUnit.BaseJdbcTest.queryByEntity" />
+        <item itemvalue="JUnit.BaseJdbcTest.countByEntity" />
       </list>
     </recent_temporary>
   </component>
@@ -502,44 +576,45 @@
       <workItem from="1536478513339" duration="855000" />
       <workItem from="1536479595278" duration="5947000" />
       <workItem from="1536495560001" duration="7658000" />
-      <workItem from="1536545429375" duration="1927000" />
+      <workItem from="1536545429375" duration="12281000" />
+      <workItem from="1536583142317" duration="4238000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DaoTest_updateByEntity - 2018.09.09 at 21h 11m 52s.xml">
-      <configuration name="DaoTest.updateByEntity" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest_insertByEntity - 2018.09.09 at 21h 12m 20s.xml">
-      <configuration name="DaoTest.insertByEntity" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest_deleteByEntity - 2018.09.09 at 21h 12m 48s.xml">
-      <configuration name="DaoTest.deleteByEntity" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DaoTest_queryByEntity - 2018.09.09 at 21h 13m 11s.xml">
+    <history-entry file="DaoTest_queryByEntity - 2018.09.10 at 12h 16m 39s.xml">
       <configuration name="DaoTest.queryByEntity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest_queryByEntity - 2018.09.09 at 21h 17m 53s.xml">
-      <configuration name="DaoTest.queryByEntity" configurationId="JUnit" />
+    <history-entry file="ComplexJdbcTest_queryTest - 2018.09.10 at 16h 40m 04s.xml">
+      <configuration name="ComplexJdbcTest.queryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest_queryByEntityAndPage - 2018.09.09 at 21h 41m 47s.xml">
-      <configuration name="DaoTest.queryByEntityAndPage" configurationId="JUnit" />
+    <history-entry file="BaseJdbcTest_queryByEntity - 2018.09.10 at 20h 58m 44s.xml">
+      <configuration name="BaseJdbcTest.queryByEntity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest_queryByEntity - 2018.09.09 at 21h 45m 56s.xml">
-      <configuration name="DaoTest.queryByEntity" configurationId="JUnit" />
+    <history-entry file="BaseJdbcTest_queryByEntity - 2018.09.10 at 21h 01m 16s.xml">
+      <configuration name="BaseJdbcTest.queryByEntity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest_queryByEntity - 2018.09.09 at 21h 49m 32s.xml">
-      <configuration name="DaoTest.queryByEntity" configurationId="JUnit" />
+    <history-entry file="ComplexJdbcTest_querySqlVoTest - 2018.09.10 at 21h 17m 45s.xml">
+      <configuration name="ComplexJdbcTest.querySqlVoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest_queryByEntity - 2018.09.09 at 21h 49m 59s.xml">
-      <configuration name="DaoTest.queryByEntity" configurationId="JUnit" />
+    <history-entry file="ComplexJdbcTest_querySqlVoTest - 2018.09.10 at 21h 19m 20s.xml">
+      <configuration name="ComplexJdbcTest.querySqlVoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DaoTest_countByEntity - 2018.09.09 at 22h 03m 33s.xml">
-      <configuration name="DaoTest.countByEntity" configurationId="JUnit" />
+    <history-entry file="ComplexJdbcTest_queryTest - 2018.09.10 at 21h 20m 34s.xml">
+      <configuration name="ComplexJdbcTest.queryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComplexJdbcTest_querySqlVoTest - 2018.09.10 at 21h 36m 42s.xml">
+      <configuration name="ComplexJdbcTest.querySqlVoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComplexJdbcTest_querySqlVoTest - 2018.09.10 at 21h 39m 00s.xml">
+      <configuration name="ComplexJdbcTest.querySqlVoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ComplexJdbcTest_querySqlUpdateTest - 2018.09.10 at 21h 49m 22s.xml">
+      <configuration name="ComplexJdbcTest.querySqlUpdateTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63016000" />
+    <option name="totallyTimeSpent" value="77608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -547,20 +622,21 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.21357064" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.15795328" />
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.19029851" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.15239155" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.24249166" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21268657" />
-      <window_info id="Web" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21481876" />
+      <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -568,13 +644,12 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.21465077" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -585,71 +660,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="69" column="35" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1712">
-          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1204#1225#0" expanded="true" />
-            <element signature="e#2367#2388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="68" column="28" lean-forward="true" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/socket/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/core/socket/MyWebSocketChannelHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/core/socket/MyWebSocketHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/core/socket/NettyConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/BaseJdbcTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="16" />
@@ -659,7 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/BaseJdbcTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
@@ -793,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/iocTest/XmlTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -811,16 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/factory/XmlBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -846,29 +848,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/DaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/.gitignore" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -879,26 +859,115 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/cun/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+        <state relative-caret-position="143">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/factory/XmlBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1204#1225#0" expanded="true" />
-            <element signature="e#2367#2388#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/BaseJdbcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="106" column="5" lean-forward="true" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/entity/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseSql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="-256">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/BaseCrud/BaseJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/vo/UserDepartment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/core/Dao/ComplexCrud/ComplexJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/framekworkTest/daoTest/ComplexJdbcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -908,6 +977,32 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>simpleSpring:Web exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27931035" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Detection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27931035" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <last-edited>scala-sdk-2.11.8</last-edited>
@@ -932,8 +1027,21 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web|simpleSpring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27931035" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.alibaba:fastjson:1.2.49</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -944,5 +1052,10 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="tomcat7:run" />
+    <option value="tomcat:run" />
   </component>
 </project>

@@ -1,6 +1,5 @@
 package core.Dao.BaseCrud;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +10,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 优点：全是原生代码，出错时一切尽在掌握之内
+ * 缺点：
+ * ① 即使是 VO 对象也要 @Column、@Table、@Id，显然是不符合现实的，特别是 @Table 是不存在的
+ * ② 只能单表 CRUD
+ */
 @Data // getter、setter、toString
 @NoArgsConstructor // 无参构造函数
 public class BaseJdbc {
@@ -51,7 +56,7 @@ public class BaseJdbc {
             // 将整条数据的Map存入到List中
             datas.add(data);
         }
-        close(ps, conn, rs);
+        close(conn);
         return datas;
     }
 
@@ -80,7 +85,7 @@ public class BaseJdbc {
             // 将整条数据的Map存入到List中
             datas.add(data);
         }
-        close(ps, conn, rs);
+        close(conn);
         return datas;
     }
 
@@ -94,7 +99,7 @@ public class BaseJdbc {
         if(rs.next()) {
             count=rs.getInt(1);
         }
-        close(ps, conn, rs);
+        close(conn);
         return count;
     }
 
@@ -104,6 +109,7 @@ public class BaseJdbc {
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
         int rs = ps.executeUpdate();
+        close(conn);
         if (rs < 0) {
             return false;
         }
@@ -128,6 +134,7 @@ public class BaseJdbc {
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
         int columnCount = ps.executeUpdate();
+        close(conn);
         if (columnCount < 1) {
             return false;
         }
@@ -140,6 +147,7 @@ public class BaseJdbc {
         Connection conn = getConnection();
         PreparedStatement ps = conn.prepareStatement(sql);
         int columnCount = ps.executeUpdate();
+        close(conn);
         if (columnCount < 1) {
             return false;
         }
@@ -162,14 +170,13 @@ public class BaseJdbc {
     /**
      * 断开
      *
-     * @param ps
      * @param conn
      * @throws SQLException
      */
-    public void close(PreparedStatement ps, Connection conn, ResultSet rs) throws SQLException {
-        ps.close();
-        rs.close();
-        conn.close();
+    public void close(Connection conn) throws SQLException {
+        if (conn!=null){
+            conn.close();
+        }
     }
 
 }

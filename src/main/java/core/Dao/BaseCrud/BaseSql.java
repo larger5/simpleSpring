@@ -7,7 +7,6 @@ import core.Dao.tableAnnotation.Table;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.net.Inet4Address;
 
 public class BaseSql {
 

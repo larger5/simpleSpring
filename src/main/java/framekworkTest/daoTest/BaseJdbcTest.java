@@ -10,19 +10,19 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-public class DaoTest {
+public class BaseJdbcTest {
 
     private BaseJdbc baseJdbc = new XmlBeanFactory("src/main/resources/spring.xml").getBaseJdbc();
 
     /**
      * 1.1、查
      * 实体中有多少个属性，就有多少个查询的条件
-     * select * from t_user where 1=1 and password='123'
-     * 返回类型：list
+     * select * from t_user w
+     * 返回类型：listhere 1=1 and password='123'
      */
     @Test
     public void queryByEntity() throws SQLException, NoSuchMethodException, ClassNotFoundException, IllegalAccessException, InvocationTargetException {
-        User user1 = new User(null, "larger5", "123");
+        User user1 = new User(null, "larger5", "123",null);
         List<Map<String, Object>> maps = baseJdbc.queryByEntity(user1);
         System.out.println(maps);
     }
@@ -35,7 +35,7 @@ public class DaoTest {
      */
     @Test
     public void queryByEntityAndPage() throws SQLException, NoSuchMethodException, ClassNotFoundException, IllegalAccessException, InvocationTargetException {
-        User user1 = new User(null, null, "123");
+        User user1 = new User(null, null, "123",null);
         List<Map<String, Object>> maps = baseJdbc.queryByEntityAndPage(user1, 1, 2);
         System.out.println(maps);
     }
@@ -49,7 +49,7 @@ public class DaoTest {
      */
     @Test
     public void countByEntity() throws SQLException, NoSuchMethodException, ClassNotFoundException, IllegalAccessException, InvocationTargetException {
-        User user1 = new User(null, "larger5", "123");
+        User user1 = new User(null, "larger5", "123",null);
         Integer count = baseJdbc.countByEntity(user1);
         System.out.println(count);
     }
@@ -62,7 +62,7 @@ public class DaoTest {
      */
     @Test
     public void deleteByEntity() throws InvocationTargetException, NoSuchMethodException, ClassNotFoundException, SQLException, IllegalAccessException {
-        User user2 = new User(6, null, null);
+        User user2 = new User(6, null, null,null);
         Boolean aBoolean2 = baseJdbc.deleteByEntity(user2);
         System.out.println(aBoolean2);
     }
@@ -76,7 +76,7 @@ public class DaoTest {
      */
     @Test
     public void insertByEntity() throws InvocationTargetException, NoSuchMethodException, ClassNotFoundException, SQLException, IllegalAccessException {
-        User user3 = new User(null, "55", "998");
+        User user3 = new User(null, "55", "998",null);
         Boolean aBoolean3 = baseJdbc.insertByEntity(user3);
         System.out.println(aBoolean3);
     }
@@ -89,7 +89,7 @@ public class DaoTest {
      */
     @Test
     public void updateByEntity() throws InvocationTargetException, NoSuchMethodException, ClassNotFoundException, SQLException, IllegalAccessException {
-        User user4 = new User(13, "larger", "5555");
+        User user4 = new User(13, "larger", "5555",null);
         Boolean aBoolean4 = baseJdbc.updateByEntity(user4);
         System.out.println(aBoolean4);
     }
@@ -101,7 +101,7 @@ public class DaoTest {
      */
     @Test
     public void updateByEntityWithAllColumnTest() throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
-        User user5 = new User(12, null, "123");
+        User user5 = new User(12, null, "123",null);
         Boolean aBoolean = baseJdbc.updateByEntityWithAllColumn(user5);
         System.out.println(aBoolean);
     }
