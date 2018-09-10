@@ -84,6 +84,20 @@ public class BaseJdbc {
         return datas;
     }
 
+    public Integer countByEntity(Object entity) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, SQLException, ClassNotFoundException {
+        String sql = baseSql.countByEntity(entity);
+        System.out.println(sql);
+        Connection conn = getConnection();
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ResultSet rs = ps.executeQuery();
+        Integer count=0;
+        if(rs.next()) {
+            count=rs.getInt(1);
+        }
+        close(ps, conn, rs);
+        return count;
+    }
+
     public Boolean deleteByEntity(Object entity) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, SQLException, ClassNotFoundException {
         String sql = baseSql.deleteByEntity(entity);
         System.out.println(sql);
